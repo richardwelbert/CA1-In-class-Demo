@@ -1,68 +1,112 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="PaddysCafe.xsl"?>
-<cafemenu>
-    <section name="Side Dishes">
-        <entree vegetarian="true">
-            <item>Potato Salad</item>
-            <price>4.95</price>
-        </entree>
-        <entree>
-            <item>Paddy's French Fries</item>
-            <price>7.50</price>
-        </entree>
-        <entree>
-            <item>Huevos Rancheros</item>
-            <price>8.50</price>
-        </entree>
-    </section>
-    <section name="Breakfast">
-        <entree>
-            <item>Two Eggs, any style</item>
-            <price>4.99</price>
-        </entree>
-        <entree>
-            <item>Paddy's Famous Peppers and Eggs</item>
-            <price>8.29</price>
-        </entree>
-        <entree vegetarian="true">
-            <item>Bowl of fruit</item>
-            <price>6.99</price>
-        </entree>
-        <entree vegetarian="true">
-            <item>French toast</item>
-            <price>5.25</price>
-        </entree>
-        <entree>
-            <item>Croissant</item>
-            <price>3.99</price>
-        </entree>
-    </section>
-    <section name="Lunch">
-        <entree>
-            <item>Grilled Chicken Sandwich</item>
-            <price>7.99</price>
-        </entree>
-        <entree>
-            <item>Tuna Melt</item>
-            <price>6.99</price>
-        </entree>
-        <entree vegetarian="true">
-            <item>Pasta Salad</item>
-            <price>7.39</price>
-        </entree>
-    </section>
-    <section name="Dinner">
-        <entree>
-            <item>Ribeye Steak</item>
-            <price>19.99</price>
-        </entree>
-        <entree>
-            <item>Chilean Sea Bass</item>
-            <price>12.99</price>
-        </entree>
-        <entree vegetarian="true">
-            <item>Linguini with Grilled Porcini Mushroom</item>
-            <price>9.79</price>
-        </entree>
-    </section>
-</cafemenu>
+<collection>
+	<section genre="Pop">
+		<entree>
+			<artist>Dua Lipa</artist>
+			<album>Dua Lipa</album>
+			<year>2017</year>
+		</entree>
+		<entree>
+			<artist>Lady Gaga</artist>
+			<album>The Fame Monster</album>
+			<year>2009</year>
+		</entree>
+		<entree numberOne="true">
+			<artist>Taylor Swift</artist>
+			<album>Reputation</album>
+			<year>2017</year>
+		</entree>
+		<entree numberOne="true">
+			<artist>Katy Perry</artist>
+			<album>Teenage Dream</album>
+			<year>2010</year>
+		</entree>
+		<entree numberOne="true">
+			<artist>Madonna</artist>
+			<album>Confessions on a Dance Floor</album>
+			<year>2005</year>
+		</entree>
+		<entree numberOne="true">
+			<artist>Justin Timberlake</artist>
+			<album>FutureSex/LoveSounds</album>
+			<year>2006</year>
+		</entree>
+	</section>
+	<section genre="R&B">
+		<entree numberOne="true">
+			<artist>Beyonce</artist>
+			<album>I Am... Sasha Fierce</album>
+			<year>2008</year>
+		</entree>
+		<entree numberOne="true">
+			<artist>Mariah Carey</artist>
+			<album>The Emancipation of Mimi</album>
+			<year>2004</year>
+		</entree>
+		<entree>
+			<artist>Rihanna</artist>
+			<album>Good Girl Gone Bad</album>
+			<year>2007</year>
+		</entree>
+		<entree>
+			<artist>Destiny's Child</artist>
+			<album>Destiny Fulfilled</album>
+			<year>2004</year>
+		</entree>
+		<entree>
+			<artist>Alicia Keys</artist>
+			<album>Here</album>
+			<year>2016</year>
+		</entree>
+	</section>
+	<section genre="Hip Hop">
+		<entree>
+			<artist>Nicki Minaj</artist>
+			<album>Queen</album>
+			<year>2018</year>
+		</entree>
+		<entree>
+			<artist>Iggy Azalea</artist>
+			<album>The New Classic</album>
+			<year>2014</year>
+		</entree>
+		<entree numberOne="true">
+			<artist>Drake</artist>
+			<album>Scorpion</album>
+			<year>2018</year>
+		</entree>
+		<entree>
+			<artist>Black Eyed Peas</artist>
+			<album>Monkey Business</album>
+			<year>2005</year>
+		</entree>
+	</section>
+	<section genre="Electronic Dance Music">
+		<entree>
+			<artist>David Guetta</artist>
+			<album>Nothing But The Beat</album>
+			<year>2011</year>
+		</entree>
+		<entree>
+			<artist>Avicii</artist>
+			<album>True</album>
+			<year>2013</year>
+		</entree>
+		<entree numberOne="true">
+			<artist>Daft Punk</artist>
+			<album>Random Access Memories</album>
+			<year>2013</year>
+		</entree>
+		<entree>
+			<artist>DJ Snake</artist>
+			<album>Carte Blanche</album>
+			<year>2019</year>
+		</entree>
+		<entree>
+			<artist>Jax Jones</artist>
+			<album>Snacks (Supersize)</album>
+			<year>2019</year>
+		</entree>
+	</section>
+</collection>
