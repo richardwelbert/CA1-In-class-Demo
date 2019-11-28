@@ -4,6 +4,7 @@ var http = require('http'),
     fs = require('fs'),
     xmlParse = require('xslt-processor').xmlParse,
     xsltProcess = require('xslt-processor').xsltProcess;
+    xml2js = require('xml2js');
 
 var router = express();
 var server = http.createServer(router);
@@ -47,6 +48,31 @@ router.get('/get/html', function(req, res) {
 
     res.end(result.toString());
 
+
+});
+
+// POST request to add to JSON & XML files
+router.post('/post/json', function(req, res) {
+
+  // Function to read in a JSON file, add to it & convert to XML
+  function appendJSON(obj) {
+    console.log(obj);
+    // Function to read in XML file, convert it to JSON, add a new object and write back to XML file
+    xmlFileToJs('CA1_IWA.xml', function(err, result) {
+      if (err) throw (err);
+      result.collection.section[obj.sec_n].entree.push({'artist': obj.artist, 'album': obj.album, 'year': obj.year});
+      console.log(result);
+      jsToXmlFile('CA1_IWA.xml', result, function(err) {
+        if (err) console.log(err);
+      })
+    })
+  }
+
+  // Call appendJSON function and pass in body of the current POST request
+  appendJSON(req.body);
+
+  // Re-direct the browser back to the page, where the POST request came from
+  res.redirect('back');
 
 });
 

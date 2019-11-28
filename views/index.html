@@ -52,24 +52,29 @@
         <h1 class="mt-5">Welcome to My Album Collection</h1>
         <p class="lead">Select your entrees from the menu below.</p>
       </div>
-      <div id="results" class="col-lg-8 order-3"></div>
-      <div class="col-lg-4 text-center order-2">
+      <div id="results" class="col-lg-9 order-3"></div>
+      <div class="col-lg-3 text-center order-2">
             <form enctype="application/json" action="/post/json" method="post">
+            <label for="">Add a new Album</label>
                 <div class="form-group">
                     <select class="form-control" name="sec_n">
-                        <option value="0">Side Dishes</option>
-                        <option value="1">Breakfast</option>
-                        <option value="2">Lunch</option>
-                        <option value="3">Dinner</option>
+                        <option selected>Choose...</option>
+                        <option value="0">Pop</option>
+                        <option value="1">ReB</option>
+                        <option value="2">Hip Hop</option>
+                        <option value="3">Electronic Dance Music</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="item" placeholder="Item">
+                    <input class="form-control" type="text" name="artist" placeholder="Artist">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="price" placeholder="Price">
+                    <input class="form-control" type="text" name="album" placeholder="Album">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="year" placeholder="Year">
+                </div>
+                <button type="submit" class="btn btn-outline-secondary">Submit</button>
             </form>
         </div>
     </div>
