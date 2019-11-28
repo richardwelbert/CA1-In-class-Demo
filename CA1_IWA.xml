@@ -3,58 +3,69 @@
 <collection>
 	<section genre="Pop">
 		<entree>
+            <img>https://www.popsdiscos.com.br/images/uploads/WEA93848-2.jpg</img>
 			<artist>Dua Lipa</artist>
 			<album>Dua Lipa</album>
 			<year>2017</year>
 		</entree>
 		<entree>
+            <img>https://images-na.ssl-images-amazon.com/images/I/71Pu0evk6eL._SY355_.jpg</img>
 			<artist>Lady Gaga</artist>
 			<album>The Fame Monster</album>
 			<year>2009</year>
 		</entree>
 		<entree numberOne="true">
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Taylor_Swift_-_Reputation.png/220px-Taylor_Swift_-_Reputation.png</img>
 			<artist>Taylor Swift</artist>
 			<album>Reputation</album>
 			<year>2017</year>
 		</entree>
 		<entree numberOne="true">
+            <img>https://www.udiscovermusic.com/wp-content/uploads/2017/08/Katy-Perry-Teenage-Dream-Album-Cover-web-optimised-820.jpg</img>
 			<artist>Katy Perry</artist>
 			<album>Teenage Dream</album>
 			<year>2010</year>
 		</entree>
 		<entree numberOne="true">
+            <img>https://i.pinimg.com/474x/2d/d4/20/2dd420feeca024074df9fa7bcf2948be--cd-cover-cover-art.jpg</img>
 			<artist>Madonna</artist>
 			<album>Confessions on a Dance Floor</album>
 			<year>2005</year>
 		</entree>
 		<entree numberOne="true">
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Justin_Timberlake_-_FutureSex_LoveSounds.png/220px-Justin_Timberlake_-_FutureSex_LoveSounds.png</img>
 			<artist>Justin Timberlake</artist>
 			<album>FutureSex/LoveSounds</album>
 			<year>2006</year>
 		</entree>
 	</section>
-	<section genre="R&B">
+	<section genre="ReB">
 		<entree numberOne="true">
+            <img>https://images-na.ssl-images-amazon.com/images/I/51lPD2h7FFL._SY355_.jpg</img>
 			<artist>Beyonce</artist>
 			<album>I Am... Sasha Fierce</album>
 			<year>2008</year>
 		</entree>
 		<entree numberOne="true">
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Mariah_Carey_The_Emancipation_of_Mimi.png/220px-Mariah_Carey_The_Emancipation_of_Mimi.png</img>
 			<artist>Mariah Carey</artist>
 			<album>The Emancipation of Mimi</album>
 			<year>2004</year>
 		</entree>
 		<entree>
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Good_Girl_Gone_Bad.png/220px-Good_Girl_Gone_Bad.png</img>
 			<artist>Rihanna</artist>
 			<album>Good Girl Gone Bad</album>
 			<year>2007</year>
 		</entree>
 		<entree>
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Destiny%27s_Child_%E2%80%93_Destiny_Fulfilled.jpg/220px-Destiny%27s_Child_%E2%80%93_Destiny_Fulfilled.jpg</img>
 			<artist>Destiny's Child</artist>
 			<album>Destiny Fulfilled</album>
 			<year>2004</year>
 		</entree>
 		<entree>
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Alicia_Keys_-_Here_Album_Cover.png/220px-Alicia_Keys_-_Here_Album_Cover.png</img>
 			<artist>Alicia Keys</artist>
 			<album>Here</album>
 			<year>2016</year>
@@ -62,21 +73,25 @@
 	</section>
 	<section genre="Hip Hop">
 		<entree>
+            <img>https://townsquare.media/site/812/files/2018/06/DfHmTTYVMAAXKCo.jpg</img>
 			<artist>Nicki Minaj</artist>
 			<album>Queen</album>
 			<year>2018</year>
 		</entree>
 		<entree>
+            <img>https://ksassets.timeincuk.net/wp/uploads/sites/55/2014/03/2014IggyAzalea_TheNewClassic600G100314.jpg</img>
 			<artist>Iggy Azalea</artist>
 			<album>The New Classic</album>
 			<year>2014</year>
 		</entree>
 		<entree numberOne="true">
+            <img>https://images.genius.com/5c677b7bfc2f696abf2e2d928301bb44.1000x1000x1.jpg</img>
 			<artist>Drake</artist>
 			<album>Scorpion</album>
 			<year>2018</year>
 		</entree>
 		<entree>
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Monkey_Business.png/220px-Monkey_Business.png</img>
 			<artist>Black Eyed Peas</artist>
 			<album>Monkey Business</album>
 			<year>2005</year>
@@ -84,26 +99,31 @@
 	</section>
 	<section genre="Electronic Dance Music">
 		<entree>
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/4/42/David_Guetta_-_Nothing_but_the_Beat.png/220px-David_Guetta_-_Nothing_but_the_Beat.png</img>
 			<artist>David Guetta</artist>
 			<album>Nothing But The Beat</album>
 			<year>2011</year>
 		</entree>
 		<entree>
+            <img>https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Avicii_-_True_%28Album%29.png/220px-Avicii_-_True_%28Album%29.png</img>
 			<artist>Avicii</artist>
 			<album>True</album>
 			<year>2013</year>
 		</entree>
 		<entree numberOne="true">
+            <img>https://upload.wikimedia.org/wikipedia/pt/7/76/Random_Access_Memories_capa.jpg</img>
 			<artist>Daft Punk</artist>
 			<album>Random Access Memories</album>
 			<year>2013</year>
 		</entree>
 		<entree>
+            <img>https://images.complex.com/complex/images/c_limit,dpr_auto,q_90,w_720/fl_lossy,pg_1/csc5voamf2lahwmx33j6/dj-snake-carte-blanche</img>
 			<artist>DJ Snake</artist>
 			<album>Carte Blanche</album>
 			<year>2019</year>
 		</entree>
 		<entree>
+            <img>https://images.genius.com/787d242b23f161c3535c91670e93382f.1000x1000x1.jpg</img>
 			<artist>Jax Jones</artist>
 			<album>Snacks (Supersize)</album>
 			<year>2019</year>
