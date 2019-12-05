@@ -3,16 +3,25 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Album Collection</title>
+    <title>Album Collection</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/AlbumCollectionStyle.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/AlbumCollectionStyle.css" rel="stylesheet">
+
+    <script>
+    window.addEventListener("load", function() { 
+    document.querySelector("#showNone").addEventListener("click", function() { 
+    highlightNumberOne('menuTable', this.checked); 
+    }); 
+    });
+    </script>
+
 </head>
 
 <body>
@@ -54,7 +63,7 @@
       </div>
       <div id="results" class="col-lg-9 order-3"></div>
       <div class="col-lg-3 text-center order-2">
-            <form enctype="application/json" action="/post/json" method="post">
+            <form name="myForm" enctype="application/json" action="/post/json" onsubmit="return validateForm()" method="post">
             <label for="">Add a new Album</label>
                 <div class="form-group">
                     <select class="form-control" name="sec_n">
@@ -72,9 +81,20 @@
                     <input class="form-control" type="text" name="album" placeholder="Album">
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="year" placeholder="Year">
+                    <input class="form-control"  type="number" name="year" placeholder="Year">
                 </div>
                 <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                
+            </form>
+            <button id="delete" class="btn btn-outline-danger">Delete</button>
+            <br>
+            <p class="text-muted">To delete an entree, click the required row first</p>
+
+            <form>
+                <div class="form-group">
+                    <input type="checkbox" name="cbOpts" value="isNone" id="showNone"/>
+                    <label for="showNone">Click Here to Highlight Number 1 Albums</label>
+                </div>
             </form>
         </div>
     </div>
