@@ -32,3 +32,8 @@ table, th, td {
  th {
      font-weight: bold;
 }
+
+.hidden{
+    visibility: hidden;
+    display: none;
+}

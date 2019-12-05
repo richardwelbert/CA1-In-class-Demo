@@ -71,10 +71,10 @@ function highlightNumberOne(idTable, bShowNone) {
 };
 
 function validateForm() {
-    var genre = document.forms["myForm"]["sec_n"].value;
-    var artist = document.forms["myForm"]["artist"].value;
-    var album = document.forms["myForm"]["album"].value;
-    var year = document.forms["myForm"]["year"].value;
+    var genre = document.forms["newAlbumForm"]["sec_n"].value;
+    var artist = document.forms["newAlbumForm"]["artist"].value;
+    var album = document.forms["newAlbumForm"]["album"].value;
+    var year = document.forms["newAlbumForm"]["year"].value;
     if (genre == "Choose...") {
         alert("You must choose a genre");
         return false;
@@ -95,6 +95,17 @@ function validateForm() {
                 return false;
         }
 };
+
+$("#success-btn, .close").click(function () {
+        $("#buttonSuccess").toggleClass("hidden");
+        swal("Good job!", "You just added an Album!", "success");
+
+});
+
+$("#delete, .close").click(function () {
+        $("#buttonDelete").toggleClass("hidden");
+        swal("Deleted!", "You just deleted an Album!", "info");
+});
 
 $(document).ready(function(){
     draw_table();

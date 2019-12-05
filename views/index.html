@@ -21,6 +21,8 @@
     }); 
     });
     </script>
+    
+    <script>import swal from 'sweetalert';</script>
 
 </head>
 
@@ -55,15 +57,19 @@
   </nav>
 
   <!-- Page Content -->
+
+    
+
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">Welcome to My Album Collection</h1>
         <p class="lead">Select your entrees from the menu below.</p>
       </div>
-      <div id="results" class="col-lg-9 order-3"></div>
-      <div class="col-lg-3 text-center order-2">
-            <form name="myForm" enctype="application/json" action="/post/json" onsubmit="return validateForm()" method="post">
+      <div id="results" class="col-lg-8 order-3"></div>
+      <div class="col-lg-4 text-center order-2">
+
+            <form name="newAlbumForm" enctype="application/json" action="/post/json" onsubmit="return validateForm()" method="post">
             <label for="">Add a new Album</label>
                 <div class="form-group">
                     <select class="form-control" name="sec_n">
@@ -83,9 +89,10 @@
                 <div class="form-group">
                     <input class="form-control"  type="number" name="year" placeholder="Year">
                 </div>
-                <button type="submit" class="btn btn-outline-secondary">Submit</button>
                 
+                <button id="success-btn" type="submit" class="btn btn-outline-secondary">Submit</button>
             </form>
+            
             <button id="delete" class="btn btn-outline-danger">Delete</button>
             <br>
             <p class="text-muted">To delete an entree, click the required row first</p>
@@ -110,6 +117,7 @@
   <script src="jquery/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="jquery/table.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
