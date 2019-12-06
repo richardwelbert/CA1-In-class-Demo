@@ -94,17 +94,19 @@ function validateForm() {
                 alert("Year must have 4 digits");
                 return false;
         }
-};
+        $("#success-btn, .close").click(function () {
+            $("#buttonSuccess").toggleClass("hidden");
+            swal("Good job!", "You just added an Album!", "success");
 
-$("#success-btn, .close").click(function () {
-        $("#buttonSuccess").toggleClass("hidden");
-        swal("Good job!", "You just added an Album!", "success");
+        });
 
-});
+    };
+
+
 
 $("#delete, .close").click(function () {
-        $("#buttonDelete").toggleClass("hidden");
-        swal("Deleted!", "You just deleted an Album!", "info");
+    $("#buttonDelete").toggleClass("hidden");
+    swal("Deleted!", "You just deleted an Album!", "info");
 });
 
 $(document).ready(function(){
