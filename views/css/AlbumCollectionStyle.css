@@ -33,6 +33,11 @@ table, th, td {
      font-weight: bold;
 }
 
+.selected {
+            background-color: #dc3545;
+            color: #FFF;
+}
+
 .hidden{
     visibility: hidden;
     display: none;

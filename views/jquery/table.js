@@ -1,3 +1,10 @@
+//Code adapted from the structure that can be found on the link below
+
+//Title: CA1-In-Class-Demo
+//Author: Mikhail Timofeev
+//Date: 08/12/2019 (last accessed)
+//Availability: https://github.com/mikhail-cct/CA1-In-class-Demo
+
 function draw_table()
 {
     $("#results").empty();
@@ -46,7 +53,7 @@ function delete_row(sec, ent)
 			cache: false,
             success: setTimeout(draw_table, 1000),
         })
-        swal("Deleted!", "You just deleted an Album!", "info");
+        swal("Deleted!", "You just deleted an Album!", "info"); //pop up alert
 	})
 };
 
@@ -71,32 +78,39 @@ function highlightNumberOne(idTable, bShowNone) {
 	};
 };
 
+//this method is to validate the user input
 function validateForm() {
     var genre = document.forms["newAlbumForm"]["sec_n"].value;
     var artist = document.forms["newAlbumForm"]["artist"].value;
     var album = document.forms["newAlbumForm"]["album"].value;
     var year = document.forms["newAlbumForm"]["year"].value;
+    //checks if the field genre is selected
     if (genre == "Choose...") {
         alert("You must choose a genre");
         return false;
     } else if (artist == "") {
+        //checks if the artist genre is typed
         alert("Artist must be filled out");
         return false;
     } else if (album == "") {
+        //checks if the album genre is typed
         alert("Album must be filled out");
         return false;
     } else if (year == "") {
+        //checks if the field year is typed
         alert("Year must be filled out");
         return false;
     } else if (isNaN(year)){
+        //checks if the input if year is a number
         alert("Year must be a number and have 4 digits");
         return false;
     } else if (year.length < 4 || year.length > 4){
+        //checks if the input of year has 4 numbers
         alert("Year must have 4 digits");
         return false;
     }
-    
-    swal("Good job!", "You just added an Album!", "success");
+
+    swal("Good job!", "You just added an Album!", "success"); //pop up alert
 
 };
 

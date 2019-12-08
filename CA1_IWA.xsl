@@ -1,4 +1,14 @@
 <?xml version="1.0"?>
+
+<!--
+    Code adapted from the structure that can be found on the link below
+
+    Title: CA1-In-Class-Demo
+    Author: Mikhail Timofeev
+    Date: 08/12/2019 (last accessed)
+    Availability: https://github.com/mikhail-cct/CA1-In-class-Demo
+-->
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/">
         <div class="table-responsive table-hover">
