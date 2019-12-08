@@ -8,7 +8,7 @@ function draw_table()
             url: url,
             type: 'GET',
             cache: false,
-            success: function(html) 
+            success: function(html)
             {
                 $("#results").append(html);
                 select_row();
@@ -32,7 +32,7 @@ function select_row()
 
 function delete_row(sec, ent)
 {
-	$("#delete").click(function ()
+	$("#delete, .close").click(function ()
 	{
 		$.ajax(
 		{
@@ -41,11 +41,12 @@ function delete_row(sec, ent)
 			data:
 			{
 				section: sec,
-				entree: ent
-			},
+                entree: ent
+            },
 			cache: false,
-			success: setTimeout(draw_table, 1000)
-		})
+            success: setTimeout(draw_table, 1000),
+        })
+        swal("Deleted!", "You just deleted an Album!", "info");
 	})
 };
 
@@ -82,32 +83,22 @@ function validateForm() {
         alert("Artist must be filled out");
         return false;
     } else if (album == "") {
-            alert("Album must be filled out");
-            return false;
-        } else if (year == "") {
-            alert("Year must be filled out");
-            return false;
-        } else if (isNaN(year)){
-            alert("Year must be a number and have 4 digits");
-            return false;
-            } if (year.length < 4 || year.length > 4){
-                alert("Year must have 4 digits");
-                return false;
-        }
-        $("#success-btn, .close").click(function () {
-            $("#buttonSuccess").toggleClass("hidden");
-            swal("Good job!", "You just added an Album!", "success");
+        alert("Album must be filled out");
+        return false;
+    } else if (year == "") {
+        alert("Year must be filled out");
+        return false;
+    } else if (isNaN(year)){
+        alert("Year must be a number and have 4 digits");
+        return false;
+    } else if (year.length < 4 || year.length > 4){
+        alert("Year must have 4 digits");
+        return false;
+    }
+    
+    swal("Good job!", "You just added an Album!", "success");
 
-        });
-
-    };
-
-
-
-$("#delete, .close").click(function () {
-    $("#buttonDelete").toggleClass("hidden");
-    swal("Deleted!", "You just deleted an Album!", "info");
-});
+};
 
 $(document).ready(function(){
     draw_table();
